@@ -36,36 +36,63 @@ html, body {
 
 }
 
-#button {
+#button:not(.top):not(.botton) {
   background-color: #fcf;
-  margin: 0.5vh;
-  margin-top: 1vh;
+  display: flex;
   font-size: 2rem;
-  height: 7vh;
+  height: 6vh;
   width: 100%;
   outline: 2px solid #757;
   box-shadow: inset 3px 3px 5px 4px rgba(255, 255, 255, .2),
               inset -2px -2px 4px rgba(0, 0, 0, .2);
-  transition: box-shadow 1s ease, transform .3s ease, outline-color .3s ease;
+  transition: box-shadow 1s ease, transform .1s ease, outline-color .3s ease;
 }
 
-#button:hover {
+#button:not(.top):not(.botton) {
+  margin-top: 1.5vh;
+
+}
+
+.botton {
+  margin-top: auto;
+}
+
+.top {
+  margin-bottom: auto;
+}
+
+.botton, .top {
+  display: flex;
+  font-size: 2rem;
+  height: 5.4vh;
+  width: 100%;
+  margin-left: -0.3vw;
+  transition: transform 1s ease;
+}
+
+.middle {
+  justify-content: center;
+  margin-top: 4vh;
+}
+
+#button:not(.top):not(.botton):hover {
   outline-color: #b7b;
   transform: scale(1.1);
   box-shadow: 5px 5px 5px 5px rgba(153, 102, 153, .6)
 }
 
-#button:active {
+#button:not(.top):not(.botton):active {
   transform: scale(1);
   outline: 2px solid #b7b;
   box-shadow:  inset -2px -2px 8px rgba(0, 0, 0, .4);
 }
 
-.container:hover {
-  transform: translate(2px, 3px);
-  box-shadow: 12px 17px 10px rgba(0, 0, 0, 0.5), 
-              inset 0.2px 0.2px 2px rgba(255, 255, 255, .6),
-              inset 4px 4px 8px 2px rgba(255, 255, 255, .3);
+.botton:hover {
+  transform: rotate(360deg);
+}
+
+.top:hover {
+  transform: scale(1.1);
 }
 
 #content, .menu {
