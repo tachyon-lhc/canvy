@@ -26,9 +26,12 @@ html, body {
   width: 100%;
   margin: 0;
   justify-content: center;
-  background-color:#b6bbe6;
+  background-color:#adc6ff;
   color: #111;
   align-items: stretch;
+  box-shadow: inset -0.6px -0.6px 5px rgba(0, 0, 0, .7),
+              inset 0.2px 0.2px 1px rgba(0, 0, 0, .7);
+  
 }
 
 #button:not(.top):not(.botton) {
@@ -69,13 +72,17 @@ html, body {
 
 .middle {
   justify-content: center;
-  margin-top: 4vh;
+  margin-top: 20vh;
+  margin-bottom: auto;
+  width: 140%;
+  height: 100%;
+  margin-right: -0.8vw;
+  margin-left: -0.8vw;
 }
 
 #button:not(.top):not(.botton):hover {
   border: 2px solid #bb448f;
   transform: scale(1.1);
-  box-shadow: 5px 5px 5px 5px rgba(153, 102, 153, .6)
 }
 
 #button:not(.top):not(.botton):active {
@@ -115,7 +122,7 @@ html, body {
 #content {
   background-color: #fff;
   width: 95%;
-  margin: 0.5vh;
+  margin: 0.5vh 0.5vh 0.5vh 0;
 }
 
 .menu {
