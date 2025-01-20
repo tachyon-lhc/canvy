@@ -18,7 +18,7 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color:#fabbf1;
+  background-color:#bbc5fa;
 }
 
 .container {
@@ -26,26 +26,20 @@ html, body {
   width: 100%;
   margin: 0;
   justify-content: center;
-  background-color:#d45eff;
+  background-color:#b6bbe6;
   color: #111;
   align-items: stretch;
-  box-shadow: 15px 20px 10px rgba(0, 0, 0, 0.5), 
-              inset 0.2px 0.2px 2px rgba(255, 255, 255, .6),
-              inset 4px 4px 8px 2px rgba(255, 255, 255, .3);
-  transition:box-shadow 1s ease, transform 1s ease;
-
 }
 
 #button:not(.top):not(.botton) {
-  background-color: #fcf;
+  background-color: #e3e6fd;
   display: flex;
   font-size: 2rem;
   height: 6vh;
   width: 100%;
-  border: 2px solid #757;
+  border: 2px solid rgb(116, 116, 116);
   box-shadow: inset 3px 3px 5px 4px rgba(255, 255, 255, .2),
               inset -2px -2px 4px rgba(0, 0, 0, .2);
-  transition: box-shadow 1s ease, transform .1s ease, outline-color .3s ease;
 }
 
 #button:not(.top):not(.botton) {
@@ -79,15 +73,18 @@ html, body {
 }
 
 #button:not(.top):not(.botton):hover {
-  outline-color: #b7b;
+  border: 2px solid #bb448f;
   transform: scale(1.1);
   box-shadow: 5px 5px 5px 5px rgba(153, 102, 153, .6)
 }
 
 #button:not(.top):not(.botton):active {
   transform: scale(1);
-  outline: 2px solid #b7b;
-  box-shadow:  inset -2px -2px 8px rgba(0, 0, 0, .4);
+}
+
+#button:not(.top):not(.botton).active {
+  border: 3px solid #bb448f;
+  transform: scale(1.1);
 }
 
 .botton:hover {
@@ -95,7 +92,7 @@ html, body {
 }
 
 .botton:active {
-  border: 1vh solid #e9e;
+  border: 1vh solid #adc6ff;
 }
 
 .top:hover {
@@ -108,7 +105,7 @@ html, body {
 
 #content, .menu {
   font-size: 2.4rem;
-  background-color: #e9e;
+  background-color: #adc6ff;
   align-items: center;
   box-shadow: inset -0.4px -0.4px 2px rgba(0, 0, 0, .7);
   text-shadow: 2px 2px 2px #fff,
