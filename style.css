@@ -34,80 +34,80 @@ html, body {
   
 }
 
+button {
+  min-width: 100%;
+  min-height: 5.4vh;
+}
+
 #button:not(.top):not(.botton) {
   background-color: #e3e6fd;
   display: flex;
   font-size: 2rem;
-  height: 6vh;
-  width: 100%;
+  min-height: 5.4vh;
+  min-width: 3.4vw;
+  margin-top: 1.5vh;
   border: 2px solid rgb(116, 116, 116);
   box-shadow: inset 3px 3px 5px 4px rgba(255, 255, 255, .2),
               inset -2px -2px 4px rgba(0, 0, 0, .2);
-}
 
-#button:not(.top):not(.botton) {
-  margin-top: 1.5vh;
+  &:hover {
+    border: 2px solid #bb448f;
+    transform: scale(1.1); 
+  }
 
+  &:active {
+    transform: scale(1);
+  }
+
+  &.active {
+    border: 3px solid #bb448f;
+    transform: scale(1.1);
+  }
 }
 
 .botton {
   margin-top: auto;
-  border: 1px solid transparent;
   border-radius: 100%;
   transition: transform 1s ease, border .3s ease;
+
+  &:hover {
+    transform: rotate(360deg);
+  }
+
+  &:active {
+    border: 1vh solid #adc6ff;
+  }
 }
 
 .top {
   margin-bottom: auto;
   transition: transform .4s ease;
+
+  &:hover {
+    transform: scale(1.3);
+  }
+
+  &:active {
+    transform: scale(1);
+  }
 }
 
 .botton, .top {
-  display: flex;
+  background-color: transparent;
+  border: 1px solid transparent;
   font-size: 2rem;
-  height: 5.4vh;
-  width: 100%;
+  min-height: 5.5vh;
+  min-width: 5.5vh;
   margin-left: -0.3vw;
 }
 
 .middle {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin-top: 20vh;
-  margin-bottom: auto;
-  width: 140%;
+  align-items: center;
+  width: 100%;
   height: 100%;
-  margin-right: -0.8vw;
-  margin-left: -0.8vw;
-}
-
-#button:not(.top):not(.botton):hover {
-  border: 2px solid #bb448f;
-  transform: scale(1.1);
-}
-
-#button:not(.top):not(.botton):active {
-  transform: scale(1);
-}
-
-#button:not(.top):not(.botton).active {
-  border: 3px solid #bb448f;
-  transform: scale(1.1);
-}
-
-.botton:hover {
-  transform: rotate(360deg);
-}
-
-.botton:active {
-  border: 1vh solid #adc6ff;
-}
-
-.top:hover {
-  transform: scale(1.3);
-}
-
-.top:active {
-  transform: scale(1);
 }
 
 #content, .menu {
@@ -126,6 +126,7 @@ html, body {
 }
 
 .menu {
+  min-width: 70px;
   padding: 1vh 2vh;
   width: 5%;
   flex-direction: column;
